@@ -10,9 +10,6 @@ WORKDIR /usr/src
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
-# install git
-RUN apt-get install git -y
-
 # copy requirements file
 COPY ../app/requirements.txt /usr/src/init/requirements.txt
 
@@ -20,7 +17,7 @@ COPY ../app/requirements.txt /usr/src/init/requirements.txt
 RUN set -eux \
     && apk add --no-cache --virtual .build-deps build-base \
         libressl-dev libffi-dev gcc musl-dev python3-dev \
-        postgresql-dev mariadb-dev \
+        postgresql-dev mariadb-dev git \
     && pip install --upgrade pip setuptools wheel \
     && pip install -r /usr/src/init/requirements.txt \
     && rm -rf /root/.cache/pip

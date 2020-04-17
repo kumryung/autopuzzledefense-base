@@ -11,7 +11,7 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
 # copy requirements file
-COPY ../app/requirements.txt /usr/src/init/requirements.txt
+COPY ./requirements.txt /usr/src/init/requirements.txt
 
 # install dependencies
 RUN set -eux \

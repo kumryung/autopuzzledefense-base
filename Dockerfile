@@ -16,7 +16,7 @@ COPY ./requirements.txt /usr/src/init/requirements.txt
 # install dependencies
 RUN set -eux \
     && apk add --no-cache --virtual .build-deps build-base \
-        libressl-dev libffi-dev gcc musl-dev python3-dev libpq-dev \
+        libressl-dev libffi-dev gcc musl-dev python3-dev \
         postgresql-dev mariadb-dev git \
     && pip install --upgrade pip setuptools wheel \
     && pip install -r /usr/src/init/requirements.txt \

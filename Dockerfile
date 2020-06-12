@@ -1,7 +1,7 @@
 # pull official base image
 FROM python:3.8.1-alpine
 LABEL maintainer="Philip <kumryung@gmail.com>"
-LABEL version="v0.0.2"
+LABEL version="v0.0.3"
 
 # set work directory
 WORKDIR /usr/src

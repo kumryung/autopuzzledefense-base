@@ -19,4 +19,6 @@ psycopg2
 natsort
 aioredis
 firebase_admin
-uvloop
+apscheduler
+regex
+dateutil

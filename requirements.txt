@@ -21,4 +21,4 @@ aioredis
 firebase_admin
 apscheduler
 regex
-dateutil
+python-dateutil

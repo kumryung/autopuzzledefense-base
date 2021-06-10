@@ -15,7 +15,7 @@ click==7.1.2
 discord-webhook==0.8.0
 ecdsa==0.15
 elastic-apm==5.6.0
-fastapi==0.60.1
+fastapi==0.65.2
 fastapi-plugins==0.4.1
 firebase-admin==4.3.0
 google-api-core==1.22.0

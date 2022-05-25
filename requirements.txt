@@ -46,7 +46,7 @@ pyasn1-modules==0.2.8
 pycparser==2.20
 pydantic==1.6.1
 pyinapp==0.1.5
-PyJWT==1.7.1
+PyJWT==2.4.0
 python-dateutil==2.8.1
 python-git-info==0.6.1
 python-multipart==0.0.5
